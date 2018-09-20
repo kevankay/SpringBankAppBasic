@@ -24,15 +24,11 @@ public class BankAccountServiceImpl implements BankAccountService {
 		this.bankAccountRepository = bankAccountRepository;
 	}
 	
-	
-	
 
 	@Override
 	public double getBalance(long accountId) {
 		return bankAccountRepository.getBalance(accountId);
 	}
-
-	
 
 	@Override
 	public double withdraw(long accountId, double amount) throws LowBalanceException {
